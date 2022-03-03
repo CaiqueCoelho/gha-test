@@ -12,5 +12,5 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm i
+    - run: cd src && npm i
     - run: npm run test
